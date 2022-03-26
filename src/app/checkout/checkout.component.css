@@ -1,0 +1,12 @@
+.checkout-details {
+  align-self: center;
+  border: 1px solid green;
+  padding: 5px 10px;
+  margin: 50px 500px;
+  text-align: center;
+  background-color: rgb(34, 37, 57);
+  color: white;
+}
+.banner {
+  padding: 10px 0;
+}

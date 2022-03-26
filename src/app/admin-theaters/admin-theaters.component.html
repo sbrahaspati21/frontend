@@ -1,0 +1,39 @@
+<div style="color: white; background-color: rgb(34, 37, 57)">
+  <div style="height: 60px">
+    <h1 style="text-align: center">
+      Theater List
+      <span style="float: right; padding-right: 10px">
+        <button class="btn btn-danger" (click)="addTheater()">
+          ADD theater
+        </button>
+      </span>
+    </h1>
+  </div>
+</div>
+<br />
+<div class="container">
+  <div class="row">
+    <div class="col-4 theaterBox" *ngFor="let theater of theatersList">
+      <div class="theaterDetail" style="text-align: center">
+        <br /><br />
+        <p>{{ theater?.theatreName }}</p>
+        <p>{{ theater?.theatreAddress }}</p>
+        <p>{{ theater?.movie?.name }}</p>
+        <div>
+          <!-- Edit theater modal -->
+          <button
+            type="button"
+            (click)="onClickEdit(theater.id)"
+            class="btn btn-info"
+          >
+            Edit theater</button
+          >&nbsp;&nbsp;
+          <button class="btn btn-danger" (click)="deletetheater(theater.id)">
+            Delete
+          </button>
+        </div>
+        <br /><br />
+      </div>
+    </div>
+  </div>
+</div>

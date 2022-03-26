@@ -1,0 +1,41 @@
+.chooseDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 55px 15px;
+}
+.chooseForm {
+  border: 2px solid black;
+  padding: 35px 20px;
+}
+.dateInput {
+  width: 200px;
+}
+.timeInput {
+  width: 200px;
+}
+
+.choosenmovie {
+  border: 1px solid rgb(0, 0, 0);
+  margin: 10px 2px;
+  padding: 8px;
+  cursor: pointer;
+  background-color: rgb(34, 37, 57);
+  color: white;
+  padding-left: 20px;
+  text-align: center;
+}
+.col {
+  cursor: pointer;
+  background-color: rgb(34, 37, 57);
+  color: white;
+}
+
+.main {
+  background-color: rgb(34, 37, 57);
+}
+
+.col1 {
+  text-align: center;
+}

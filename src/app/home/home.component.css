@@ -1,0 +1,16 @@
+.movie_poster {
+  width: auto;
+}
+
+.movieDetail {
+  border: 1px solid rgb(0, 0, 0);
+  margin: 10px 2px;
+  padding: 8px;
+  cursor: pointer;
+  background-color: rgb(34, 37, 57);
+  color: white;
+  padding-left: 20px;
+}
+.main {
+  background-color: rgb(255, 255, 255);
+}
