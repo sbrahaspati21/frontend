@@ -16,28 +16,33 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { PaymentComponent } from './payment/payment.component';
+import { NmscinemaComponent } from './nmscinema/nmscinema.component';
 
 const routes: Routes = [
-  {path:'home', component:HomeComponent},
-  {path:'loginc', component:LoginComponent},
-  {path:'signup', component:SignupComponent},
-  {path:'frgpassword', component:ForgetPasswordComponent},
-  {path:'admin/movies/editmovie/:id', component:AdminEditMovieComponent},
-  {path:'admin/movies', component:AdminMoviesComponent},
-  {path:'admin/movies/addmovie', component:AdminAddMovieComponent},
-  {path:'admin/theaters', component:AdminTheatersComponent},
-  {path:'admin/theaters/addtheater', component:AdminAddTheaterComponent},
-  {path:'admin/theaters/edittheater/:id', component:AdminEditTheaterComponent},
-  {path:'bookseats', component:SeatBookingComponent},
-  {path:'confirmation', component:BookingConfirmationComponent},
-  {path:'choose', component:ChooseComponent},
-  {path:'listMovies', component:ActiveShowComponent},
-  {path:'checkout', component:CheckoutComponent},
-  {path:'payment', component:PaymentComponent}
+  { path: 'home', component: HomeComponent },
+  { path: 'loginc', component: LoginComponent },
+  { path: 'signup', component: SignupComponent },
+  { path: 'frgpassword', component: ForgetPasswordComponent },
+  { path: 'admin/movies/editmovie/:id', component: AdminEditMovieComponent },
+  { path: 'admin/movies', component: AdminMoviesComponent },
+  { path: 'admin/movies/addmovie', component: AdminAddMovieComponent },
+  { path: 'admin/theaters', component: AdminTheatersComponent },
+  { path: 'admin/theaters/addtheater', component: AdminAddTheaterComponent },
+  {
+    path: 'admin/theaters/edittheater/:id',
+    component: AdminEditTheaterComponent,
+  },
+  { path: 'bookseats', component: SeatBookingComponent },
+  { path: 'confirmation', component: BookingConfirmationComponent },
+  { path: 'choose', component: ChooseComponent },
+  { path: 'listMovies', component: ActiveShowComponent },
+  { path: 'checkout', component: CheckoutComponent },
+  { path: 'payment', component: PaymentComponent },
+  { path: 'nmscinema', component: NmscinemaComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule {  }
+export class AppRoutingModule {}

@@ -23,6 +23,7 @@ import { ChooseComponent } from './choose/choose.component';
 import { ActiveShowComponent } from './active-show/active-show.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { PaymentComponent } from './payment/payment.component';
+import { NmscinemaComponent } from './nmscinema/nmscinema.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { PaymentComponent } from './payment/payment.component';
     ChooseComponent,
     ActiveShowComponent,
     CheckoutComponent,
-    PaymentComponent
+    PaymentComponent,
+    NmscinemaComponent
   ],
   imports: [
     BrowserModule,

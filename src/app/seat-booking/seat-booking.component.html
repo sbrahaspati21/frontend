@@ -1,9 +1,9 @@
-<div>
+<div class="bg">
   <br />
   <div
     *ngFor="let row of rowList"
     class="seatRow"
-    style="margin-left: 37%; margin-top: 10px"
+    style="margin-left: 35.8%; margin-top: 10px"
   >
     <ng-container *ngFor="let column of columnList">
       <div
@@ -25,8 +25,9 @@
       </div>
     </ng-container>
   </div>
-</div>
-<br />
-<div style="text-align: center">
-  <button class="btn btn-warning" (click)="bookSeats()">BOOK SEATS</button>
+
+  <br />
+  <div style="text-align: center">
+    <button class="btn btn-warning" (click)="bookSeats()">BOOK SEATS</button>
+  </div>
 </div>
