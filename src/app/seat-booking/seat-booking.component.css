@@ -1,6 +1,6 @@
 .seat {
-  height: 30px;
-  width: 30px;
+  height: 28px;
+  width: 28px;
   border: 2px solid rgb(0, 0, 0);
   margin: 0px 3px;
   display: flex;
@@ -20,6 +20,4 @@
 .blockedSeat {
   background-color: grey;
   pointer-events: none;
-}
-.bg {
 }

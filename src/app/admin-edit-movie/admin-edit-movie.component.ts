@@ -48,8 +48,8 @@ export class AdminEditMovieComponent implements OnInit {
         this.editMovieForm.value.name,
         this.editMovieForm.value.duration,
         this.editMovieForm.value.language,
-        this.editMovieForm.value.genre
-        // this.editMovieForm.value.banner
+        this.editMovieForm.value.genre,
+        this.editMovieForm.value.banner
       )
       .subscribe(
         (result) => {

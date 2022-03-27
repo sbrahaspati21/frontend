@@ -12,7 +12,7 @@
   <div class="row">
     <div class="col-4 movieBox" *ngFor="let movie of moviesList">
       <div class="container">
-        <div class="container">
+        <div class="container" style="text-align: center; font-size: larger">
           <div class="movieDetail" (click)="bookMovie(movie)">
             <p>{{ movie?.name }}</p>
             <p>{{ movie?.duration }}</p>
@@ -29,5 +29,6 @@
         </div>
       </div>
     </div>
+    <br />
   </div>
 </div>

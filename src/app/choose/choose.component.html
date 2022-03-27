@@ -1,81 +1,91 @@
+<div class="hi" style="height: 60px">
+  <h1 style="text-align: center">Book Movie</h1>
+</div>
+<br />
 <div class="container">
-  <br />
-  <div class="choosenmovie">
-    <p>movie name: {{ choosenMovie?.name }}</p>
-    <p>movie duration: {{ choosenMovie?.duration }}</p>
-    <p>movie genre: {{ choosenMovie?.genre }}</p>
-    <p>movie language: {{ choosenMovie?.language }}</p>
-  </div>
-  <div class="chooseDiv">
-    <div class="main">
-      <form
-        [formGroup]="chooseForm"
-        (ngSubmit)="choose()"
-        class="form-group"
-        class="chooseForm"
-      >
-        <div class="col">
-          <label>Choose theater:</label>
-          <select
-            type="text"
-            placeholder="theater"
-            formControlName="theater"
-            name="theater"
-            class="form-control theater"
-            (change)="setTheaterId()"
-            [class.is-invalid]="
-              chooseForm.get('theater').invalid &&
-              chooseForm.get('theater').touched
-            "
-          >
-            <option selected value>-- select an option --</option>
-            <ng-container *ngFor="let option of theatersList">
-              <option>
-                <div>{{ option.id }}) {{ option.theatreName }}</div>
-              </option>
-            </ng-container>
-          </select>
-        </div>
-        <div class="col">
-          <label>Choose date:</label>
-          <input
-            class="form-control dateInput"
-            type="date"
-            formControlName="date"
-            [class.is-invalid]="
-              chooseForm.get('date').invalid && chooseForm.get('date').touched
-            "
-          />
-        </div>
-        <div class="col">
-          <label>Choose time:</label>
-          <select
-            type="text"
-            placeholder="time"
-            formControlName="time"
-            name="time"
-            class="form-control timeInput"
-            [class.is-invalid]="
-              chooseForm.get('time').invalid && chooseForm.get('time').touched
-            "
-          >
-            <option selected value>-- select an option --</option>
-            <option>10:00 AM (Morning)</option>
-            <option>01:00 PM (Matnee)</option>
-            <option>04:00 PM (Evening)</option>
-            <option>08:00 PM (Night)</option>
-          </select>
-        </div>
-        <br />
-        <div class="col1">
-          <input
-            type="submit"
-            class="btn btn-success mr-3"
-            placeholder="submit"
-            [disabled]="!chooseForm.valid"
-          />
-        </div>
-      </form>
+  <aside>
+    <div class="choosenmovie" style="float: left">
+      <h3>Movie Details</h3>
+      <br />
+      <p>Movie Name: {{ choosenMovie?.name }}</p>
+      <p>Movie Duration: {{ choosenMovie?.duration }}</p>
+      <p>Movie Genre: {{ choosenMovie?.genre }}</p>
+      <p>Movie Language: {{ choosenMovie?.language }}</p>
+      <p>
+        <img src="{{ choosenMovie?.banner }}" width="150px" height="90px" />
+      </p>
     </div>
-  </div>
+    <div class="chooseDiv" style="float: right">
+      <div class="main">
+        <form
+          [formGroup]="chooseForm"
+          (ngSubmit)="choose()"
+          class="form-group"
+          class="chooseForm"
+        >
+          <div class="col">
+            <label>Choose theater:</label>
+            <select
+              type="text"
+              placeholder="theater"
+              formControlName="theater"
+              name="theater"
+              class="form-control theater"
+              (change)="setTheaterId()"
+              [class.is-invalid]="
+                chooseForm.get('theater').invalid &&
+                chooseForm.get('theater').touched
+              "
+            >
+              <option selected value>-- select an option --</option>
+              <ng-container *ngFor="let option of theatersList">
+                <option>
+                  <div>{{ option.id }}) {{ option.theatreName }}</div>
+                </option>
+              </ng-container>
+            </select>
+          </div>
+          <div class="col">
+            <label>Choose date:</label>
+            <input
+              class="form-control dateInput"
+              type="date"
+              formControlName="date"
+              [class.is-invalid]="
+                chooseForm.get('date').invalid && chooseForm.get('date').touched
+              "
+            />
+          </div>
+          <div class="col">
+            <label>Choose time:</label>
+            <select
+              type="text"
+              placeholder="time"
+              formControlName="time"
+              name="time"
+              class="form-control timeInput"
+              [class.is-invalid]="
+                chooseForm.get('time').invalid && chooseForm.get('time').touched
+              "
+            >
+              <option selected value>-- select an option --</option>
+              <option>10:00 AM (Morning)</option>
+              <option>01:00 PM (Matnee)</option>
+              <option>04:00 PM (Evening)</option>
+              <option>08:00 PM (Night)</option>
+            </select>
+          </div>
+          <br />
+          <div class="col1">
+            <input
+              type="submit"
+              class="btn btn-success mr-3"
+              placeholder="submit"
+              [disabled]="!chooseForm.valid"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </aside>
 </div>

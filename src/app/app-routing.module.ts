@@ -39,6 +39,8 @@ const routes: Routes = [
   { path: 'checkout', component: CheckoutComponent },
   { path: 'payment', component: PaymentComponent },
   { path: 'nmscinema', component: NmscinemaComponent },
+  { path: 'forgot-password', component: ForgetPasswordComponent },
+  { path: 'active-show', component: ActiveShowComponent },
 ];
 
 @NgModule({
