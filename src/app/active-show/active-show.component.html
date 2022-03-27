@@ -6,10 +6,10 @@
     <div class="row">
       <div class="col-4 movieBox" *ngFor="let movie of moviesList">
         <div class="movieDetail">
-          <p>Movie Name : {{ movie?.name }}</p>
-          <p>Movie Duration : {{ movie?.duration }}</p>
-          <p>Movie Language : {{ movie?.language }}</p>
-          <p>Movie Genre : {{ movie?.genre }}</p>
+          <p>{{ movie?.name }}</p>
+          <p>{{ movie?.duration }}</p>
+          <p>{{ movie?.language }}</p>
+          <p>{{ movie?.genre }}</p>
           <img
             src="{{ movie?.banner }}"
             width="200"
@@ -22,3 +22,5 @@
     </div>
   </div>
 </div>
+<br />
+<br />
