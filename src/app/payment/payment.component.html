@@ -39,16 +39,9 @@
           placeholder="Enter Your Expiry Date"
         />
       </p>
-      <div>
+      <div class="main">
         <br />
-        <button
-          class="btn btn-success"
-          type="submit"
-          id="Continue"
-          (click)="payment()"
-        >
-          Click to Pay
-        </button>
+        <a [routerLink]="['/payment-page']" class="button">Confirm Payment</a>
       </div>
     </form>
   </div>

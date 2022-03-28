@@ -14,17 +14,20 @@
       <div class="container">
         <div class="container" style="text-align: center; font-size: larger">
           <div class="movieDetail" (click)="bookMovie(movie)">
+            <br />
+            <p>
+              <img
+                src="{{ movie?.banner }}"
+                width="250px"
+                height="140px"
+                alt="banner"
+                style="margin-bottom: 5px"
+              />
+            </p>
             <p>{{ movie?.name }}</p>
             <p>{{ movie?.duration }}</p>
             <p>{{ movie?.language }}</p>
             <p>{{ movie?.genre }}</p>
-            <img
-              src="{{ movie?.banner }}"
-              width="200"
-              height="90"
-              alt="banner"
-              style="margin-bottom: 5px"
-            />
           </div>
         </div>
       </div>

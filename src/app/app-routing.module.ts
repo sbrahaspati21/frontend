@@ -17,6 +17,7 @@ import { HomeComponent } from './home/home.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { PaymentComponent } from './payment/payment.component';
 import { NmscinemaComponent } from './nmscinema/nmscinema.component';
+import { PaymentPageComponent } from './payment-page/payment-page.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -41,6 +42,7 @@ const routes: Routes = [
   { path: 'nmscinema', component: NmscinemaComponent },
   { path: 'forgot-password', component: ForgetPasswordComponent },
   { path: 'active-show', component: ActiveShowComponent },
+  { path: 'payment-page', component: PaymentPageComponent },
 ];
 
 @NgModule({

@@ -46,16 +46,17 @@ import { NmscinemaComponent } from './nmscinema/nmscinema.component';
     ActiveShowComponent,
     CheckoutComponent,
     PaymentComponent,
-    NmscinemaComponent
+    NmscinemaComponent,
+    PaymentPageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

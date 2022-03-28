@@ -1,12 +1,25 @@
 .checkout-details {
-  align-self: center;
+  width: 40%;
   border: 1px solid green;
   padding: 5px 10px;
-  margin: 50px 500px;
+  margin: 50px 380px;
   text-align: center;
-  background-color: rgb(34, 37, 57);
   color: white;
+  background-color: rgb(34, 37, 57);
 }
 .banner {
   padding: 10px 0;
+}
+
+.button {
+  align-items: center;
+  width: 70px;
+  height: 35px;
+  background: #007bff;
+  padding: 6px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  line-height: 25px;
 }
