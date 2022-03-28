@@ -9,12 +9,13 @@
       class="input-grp"
       id="login"
     >
+      <br />
       <div class="form-group row">
         <div class="col">
           <label class="small_label">Name</label>
           <input
             type="text"
-            placeholder="{{ editingdMovie?.name }}"
+            placeholder="Enter Movie Name"
             formControlName="name"
             name="name"
             class="form-control"
@@ -34,10 +35,10 @@
           >
         </div>
         <div class="col">
-          <label class="small_label">duration</label>
+          <label class="small_label">Duration</label>
           <input
             type="text"
-            placeholder="{{ editingdMovie?.duration }}"
+            placeholder="Enter Duration"
             formControlName="duration"
             name="duration"
             class="form-control"
@@ -53,16 +54,16 @@
               editMovieForm.get('duration').untouched
             "
             class="text-danger"
-            >duration is requied</small
+            >Duration is requied</small
           >
         </div>
       </div>
       <div class="form-group row">
         <div class="col">
-          <label class="small_label">language</label>
+          <label class="small_label">Language</label>
           <input
             type="language"
-            placeholder="{{ editingdMovie?.language }}"
+            placeholder="Enter Language"
             formControlName="language"
             name="language"
             class="form-control"
@@ -78,14 +79,14 @@
               editMovieForm.get('language').untouched
             "
             class="text-danger"
-            >language is requied</small
+            >Language is requied</small
           >
         </div>
         <div class="col">
-          <label class="small_label">genre</label>
+          <label class="small_label">Genre</label>
           <input
             type="text"
-            placeholder="{{ editingdMovie?.genre }}"
+            placeholder="Enter Genre"
             formControlName="genre"
             name="genre"
             class="form-control"
@@ -101,14 +102,14 @@
               editMovieForm.get('genre').untouched
             "
             class="text-danger"
-            >genre is requied</small
+            >Genre is requied</small
           >
         </div>
         <div class="col">
-          <label class="small_label">banner</label>
+          <label class="small_label">Banner</label>
           <input
             type="url"
-            placeholder="{{ editingdMovie?.banner }}"
+            placeholder="Enter Banner Link"
             formControlName="banner"
             name="banner"
             class="form-control"
@@ -124,18 +125,20 @@
               editMovieForm.get('banner').untouched
             "
             class="text-danger"
-            >banner is requied</small
+            >Banner is requied</small
           >
         </div>
       </div>
       <hr />
-      <br /><br />
-      <input
-        type="submit"
-        class="btn btn-success mr-3"
-        placeholder="submit"
-        [disabled]="!editMovieForm.valid"
-      />
+      <br />
+      <div style="text-align: center; align-items: center">
+        <input
+          type="submit"
+          class="btn btn-success mr-3"
+          placeholder="submit"
+          [disabled]="!editMovieForm.valid"
+        />
+      </div>
     </form>
   </div>
 </div>

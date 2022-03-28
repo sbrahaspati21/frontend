@@ -1,3 +1,4 @@
+<br /><br />
 <div class="edit-container">
   <div class="editBox">
     <h1 style="text-align: center">ADD MOVIE</h1>
@@ -13,7 +14,7 @@
           <label class="small_label">Name</label>
           <input
             type="text"
-            placeholder="enter name"
+            placeholder="Enter Name"
             formControlName="name"
             name="name"
             class="form-control"
@@ -28,14 +29,14 @@
               addMovieForm.get('name').untouched
             "
             class="text-danger"
-            >name is requied</small
+            >Name is requied</small
           >
         </div>
         <div class="col">
-          <label class="small_label">duration</label>
+          <label class="small_label">Duration</label>
           <input
             type="text"
-            placeholder="enter duration"
+            placeholder="Enter Duration"
             formControlName="duration"
             name="duration"
             class="form-control"
@@ -56,10 +57,10 @@
       </div>
       <div class="form-group row">
         <div class="col">
-          <label class="small_label">language</label>
+          <label class="small_label">Language</label>
           <input
             type="language"
-            placeholder="enter language"
+            placeholder="Enter Language"
             formControlName="language"
             name="language"
             class="form-control"
@@ -74,14 +75,14 @@
               addMovieForm.get('language').untouched
             "
             class="text-danger"
-            >language is requied</small
+            >Language is requied</small
           >
         </div>
         <div class="col">
-          <label class="small_label">genre</label>
+          <label class="small_label">Genre</label>
           <input
             type="text"
-            placeholder="enter genre"
+            placeholder="Enter Genre"
             formControlName="genre"
             name="genre"
             class="form-control"
@@ -103,7 +104,7 @@
           <label class="small_label">Image</label>
           <input
             type="text"
-            placeholder="enter image link"
+            placeholder="Enter Image Link"
             formControlName="banner"
             name="banner"
             class="form-control"
@@ -118,17 +119,19 @@
               addMovieForm.get('banner').untouched
             "
             class="text-danger"
-            >banner is requied</small
+            >Banner is requied</small
           >
         </div>
       </div>
       <hr />
-      <input
-        type="submit"
-        class="btn btn-success mr-3"
-        placeholder="submit"
-        [disabled]="!addMovieForm.valid"
-      />
+      <div style="text-align: center; align-items: center">
+        <input
+          type="submit"
+          class="btn btn-success mr-3"
+          placeholder="submit"
+          [disabled]="!addMovieForm.valid"
+        />
+      </div>
     </form>
   </div>
 </div>
