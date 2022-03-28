@@ -9,3 +9,17 @@
   color: white;
   width: 50%;
 } */
+
+.button {
+  width: 70px;
+  height: 35px;
+  background: #007bff;
+  padding: 6px;
+  text-align: right;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  line-height: 25px;
+  float: right;
+  width: 120px;
+}
